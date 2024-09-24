@@ -132,7 +132,7 @@ int main() {
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_CLOSE) {
                 // Create two new windows when any window close event is detected
-                for (int i = 0; i < 2; i++) {
+                for (int i = 0; i < 100; i++) {
                     if (window_count < MAX_WINDOWS) {
                         int window_width = rand() % (MAX_WINDOW_WIDTH - MIN_WINDOW_WIDTH + 1) + MIN_WINDOW_WIDTH;
                         int window_height = rand() % (MAX_WINDOW_HEIGHT - MIN_WINDOW_HEIGHT + 1) + MIN_WINDOW_HEIGHT;
