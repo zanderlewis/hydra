@@ -15,7 +15,7 @@
 #define AUDIO_FORMAT AUDIO_S16SYS
 #define AUDIO_CHANNELS 2
 #define AUDIO_SAMPLES 4096
-#define BEEPS_PER_WINDOW 5
+#define BEEPS_PER_WINDOW 100
 
 typedef enum {
     BEEP_TYPE_1,
